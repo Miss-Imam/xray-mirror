@@ -736,7 +736,7 @@ function demoLoop() {
 }
 
 async function boot() {
-  THREE = await import(DEMO && new URLSearchParams(location.search).get("three") || THREE_URL);
+  THREE = await import(THREE_URL);
   initMath(); initHandMath(); buildScene();
 }
 
